@@ -1,0 +1,107 @@
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;          /* left/right gap hata kar auto center */
+  padding: 15px 20px;         /* responsive padding */
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 12px 9px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;            
+  left: 0;
+  right: 0;                  /* ensure poori width le */
+  width: 95%;                /* responsive width */
+  max-width: 1200px;         /* desktop pe limit */
+  z-index: 1000;    
+  box-sizing: border-box;    /* padding ke sath layout safe */
+}
+
+
+.logo {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo-accent {
+  color: #1db9d2;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: black;
+  /* font-size: 28px; */
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #1db9d2;
+}
+
+.navbar nav a.active {
+  color: #1db9d2;
+  border-bottom: 2px solid #1db9d2;
+  padding-bottom: 3px;
+}
+
+/* Hamburger menu style */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #444;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Animate hamburger to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 15px;
+    display: none;
+    z-index: 100;
+  }
+
+  .navbar nav.open {
+    display: flex;
+  }
+}
+

@@ -1,0 +1,122 @@
+.hire-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #0f172a; /* dark background */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hire-hero {
+  padding: 80px 20px;
+  background: white;
+  color: white;
+}
+.hire-hero h1 {
+color:#1db9d2;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.hire-hero p {
+  color:black;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+.hire-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #1db9d2;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hire-btn:hover {
+  background: #1db9d2;
+}
+
+/* Why Hire Me */
+.why-hire {
+    background-color: white;
+    color: black;
+  padding: 65px 20px;
+}
+.why-hire h2 {
+    color: black;
+  margin-bottom: 30px;
+}
+.hire-cards {
+    color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1db9d2;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Services */
+.services {
+  background-color: white;
+  padding: 60px 20px;
+  /* background: #111827; */
+}
+.services h2 {
+    color: black;
+  margin-bottom: 20px;
+}
+.services ul {
+    color: black;
+  list-style: none;
+  padding: 0;
+}
+.services li {
+    color: black;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+.contact-section {
+  background-color: #1db9d2;
+  padding: 60px 20px;
+}
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.contact-form button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #1e40af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hire-hero h1 {
+    font-size: 2rem;
+  }
+}

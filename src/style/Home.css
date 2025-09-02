@@ -1,0 +1,410 @@
+/* -------- Global Reset -------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+/* -------- Hero Section -------- */
+
+.hero {
+  min-height: 100vh;  /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 130px 40px;
+  flex-wrap: wrap;
+  min-height: 92vh;  
+  box-sizing: border-box;
+  margin-bottom: 90px;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #1db9d2;
+}
+
+.text-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.text-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hirebtn {
+  background: #1db9d2;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hirebtn:hover {
+  background: #1db9d2;
+}
+
+.image-section img {
+  padding-right: 10px;
+  max-width: 625px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* -------- About Section -------- */
+.about {
+  background-color: white;
+  padding: 30px 20px;
+  /* min-height: 100vh;    */
+  display: flex;
+  align-items: center;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+  padding-left: 75px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* flex-wrap: wrap; */
+  /* min-height: 100vh; */
+}
+
+.image-side {
+  position: relative;
+  margin-right: 50px;
+}
+
+.image-side img {
+  max-width: 270px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.social-icons {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1db9d2;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.info-side {
+  max-width: 600px;
+}
+
+.greeting {
+  color: #1db9d2;
+  margin: 0;
+}
+
+.highlight {
+  color: #1db9d2;
+}
+
+.info-side h2 {
+  margin: 10px 0;
+}
+
+.info-side p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.details-grid strong {
+  color: #000;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cvbtn {
+  background: #1db9d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hirebtn {
+  background: #1db9d2;
+  color: white;
+  border: 2px solid #1db9d2;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.cvbtn:hover {
+  background: #17a3b8;
+}
+
+.hirebtn:hover {
+  background: white;
+  color: #1db9d2;
+}
+
+/* -------- Qualifications Section -------- */
+.qualifications {
+  /* text-align: center;
+  padding: 145px 20px;
+  background: white; */
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  min-height: 92vh;  /* Full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.sbtitle {
+  color: #1db9d2;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 350px;
+  text-align: left;
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cardi {
+  border-left: 3px solid #1db9d2;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+.card h4 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 10px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* -------- Responsive Design -------- */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    max-width: 100%;
+  }
+
+  .image-section img {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-side {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 80px 20px;
+  }
+
+  .text-section h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 24px;
+  }
+
+  .text-section p {
+    font-size: 13px;
+  }
+
+  .hire-btn, .cv-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .image-section img {
+    max-width: 300px;
+  }
+}
+
+/* --------------Our Services----------------- */
+
+
+.services-section {
+  background: white;
+  color:#1db9d2;
+  font-size: 28px;
+  padding: 4rem 1rem;
+  text-align: center;
+  /* border-bottom: solid #555; */
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  transform: translateY(0); /* default for aos+hover conflict fix */
+}
+
+.service-card:hover {
+  transform: translateY(0) scale(1.05);  /* hover + aos dono */
+}
+
+
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #1db9d2; /* pink color */
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.service-card button {
+  background: #1db9d2;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.service-card button:hover {
+  background: #1db9d2;
+}
+

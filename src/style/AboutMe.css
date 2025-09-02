@@ -1,0 +1,100 @@
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap; /* Responsive */
+  min-height: 92vh;   /* Full screen height for hero */
+}
+
+/* Left Profile Card */
+.profile-card {
+  background-color: #00bcd4;
+  color: white;
+  padding: 100px 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 280px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.socials-icons {
+  display: flex !important;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials-icons a {
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.socials-icons a:hover {
+  color: black;
+}
+
+/* Right About Section */
+.about-content {
+  max-width: 500px;
+}
+
+.about-content h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  color: black;
+  padding: 10px 25px;
+  border: 2px solid black;
+  border-radius: 25px;
+  background: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* .credit {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.credit a {
+  color: #0073e6;
+  text-decoration: none;
+}
+.credit a:hover {
+  text-decoration: underline;
+} */
