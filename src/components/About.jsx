@@ -88,7 +88,7 @@ function AboutMe() {
           </p>
 
           <Link smooth to="/#contact">
-            <button className="contact-btn">Contact Me</button>
+            <a className="contact-btn">Contact Me</a>
           </Link>&nbsp;&nbsp;&nbsp;
           <a className="contact-btn" href="/CV/Ahsan Rafique-CV.pdf" download>Download My CV</a>
         </motion.div>

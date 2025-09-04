@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../style/Navbar.css';
-import { Link } from "react-scroll";  // 👈 NavLink ki jagah yeh use hoga
+import { HashLink as Link } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -27,11 +27,11 @@ function Navbar() {
             {/* Navigation Links */}
             <nav className={isOpen ? "open" : ""}>
                 <NavLink to="/" end onClick={() => setIsOpen(false)}>Home</NavLink>
-                <Link to="about" smooth={true} duration={600} onClick={() => setIsOpen(false)}>About</Link>
+                <Link to="/#about" smooth={true} duration={600} onClick={() => setIsOpen(false)}>About</Link>
                 <NavLink to="/skills" onClick={() => setIsOpen(false)}>Skills</NavLink>
-                <Link to="services" smooth={true} duration={600} onClick={() => setIsOpen(false)}>Services</Link>
-                <Link to="qualifications" smooth={true} duration={600} onClick={() => setIsOpen(false)}>Qualifications</Link>
-                <Link to="contact" smooth={true} duration={600} onClick={() => setIsOpen(false)}>Contact</Link>
+                <Link to="/#services" smooth={true} duration={600} onClick={() => setIsOpen(false)}>Services</Link>
+                <Link to="/#qualifications" smooth={true} duration={600} onClick={() => setIsOpen(false)}>Qualifications</Link>
+                <Link to="/#contact" smooth={true} duration={600} onClick={() => setIsOpen(false)}>Contact</Link>
             </nav>
         </header>
         </>

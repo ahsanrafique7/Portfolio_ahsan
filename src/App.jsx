@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './components/About'; 
 import HireNow from './components/HireNow';
 import Skills from './components/Skills';
+import Datascience from './pages/Datascience';
 // import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -18,6 +19,7 @@ function App() {
           {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="/hire" element={<HireNow />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/datascience" element={<Datascience />} />
 
         </Routes>
       

@@ -1,12 +1,8 @@
 import React, { useRef, useState } from "react";
-
 import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
 import "../style/ContactUs.css";
 
 function App() {

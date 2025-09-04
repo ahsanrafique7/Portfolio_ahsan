@@ -1,0 +1,148 @@
+.page {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.heru {
+  background: white;
+  color: black;
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  position: relative;
+}
+
+.heru-content {
+  max-width: 600px;
+}
+
+.heru h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heru p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.heru .btn-primary {
+  padding: 12px 25px;
+  background: white;
+  color: #2563eb;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero .btn-primary:hover {
+  background: #f1f1f1;
+}
+
+.hero-image {
+  width: 300px;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 80px 10%;
+  background: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 50px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.btn-secondary {
+  padding: 12px 25px;
+  background: #72757b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: black;
+  color: white;
+}
+
+.about-image img {
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Stats Section */
+.stats {
+  background: #dfe3ef;
+  color: rgb(143, 139, 139);
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px 10%;
+}
+
+.stat h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.stat p {
+  font-size: 18px;
+}

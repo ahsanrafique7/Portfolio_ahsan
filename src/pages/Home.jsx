@@ -129,7 +129,7 @@ function App() {
 
         
 <section id="services" className="services-section">
-  <h2 data-aos="fade-up">Our Services</h2>
+  <h2 data-aos="fade-up">Services</h2>
 
   <div className="services-container">
     {/* Web Development Card */}
@@ -145,7 +145,9 @@ function App() {
       <div className="service-icon">📊</div>
       <h3>Data Science</h3>
       <p>Data analysis, visualization, and predictive modeling.</p>
-      <button>Read More</button>
+      <NavLink to="/datascience" className="datasciencebtn">
+         <button>Read More</button> 
+      </NavLink>
     </div>
   </div>
 </section>

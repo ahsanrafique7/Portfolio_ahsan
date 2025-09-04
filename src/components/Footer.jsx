@@ -13,7 +13,7 @@ function Footer() {
       {/* <a href="#contact" className="contact-btn">
         contact. <FaArrowRight />
       </a> */}
-      <NavLink to="/contact" className="contact-btn">Contact <FaArrowRight /></NavLink>
+      {/* <NavLink to="/contact" className="contact-btn">Contact <FaArrowRight /></NavLink> */}
       <div className="social-links">
         <a href="https://dribbble.com" target="_blank" rel="noreferrer">
           dribbble.

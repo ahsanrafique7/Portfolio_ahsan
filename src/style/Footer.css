@@ -1,8 +1,8 @@
 .contactsection {
   text-align: center;
   padding: 80px 20px;
-  color: white;
-  background: rgb(63, 63, 63);
+  color: black;
+  background: rgb(233, 230, 230);
   font-family: 'Arial', sans-serif;
 }
 
@@ -23,10 +23,10 @@
   max-width: 700px;
   margin: 0 auto 30px;
   line-height: 1.6;
-  color: #ccc;
+  color: #000000;
 }
 
-.contact-btn {
+/* .contact-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -37,11 +37,11 @@
   border-radius: 4px;
   font-weight: bold;
   transition: background 0.3s ease;
-}
+} */
 
-.contact-btn:hover {
+/* .contact-btn:hover {
   background: #36a58b;
-}
+} */
 
 .social-links {
   margin-top: 50px;
@@ -52,7 +52,7 @@
 }
 
 .social-links a {
-  color: white;
+  color: rgb(172, 141, 141);
   text-decoration: none;
   font-weight: 500;
   position: relative;
