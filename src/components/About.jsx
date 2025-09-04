@@ -18,7 +18,7 @@ function AboutMe() {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="/Images/Ahsan.png" alt="profile" className="profile-img" />
+          <img src="/Images/Ahsan2.svg" alt="profile" className="profile-img" />
           <h2>
             HELLO, I'M <br /> Ahsan Rafique
           </h2>

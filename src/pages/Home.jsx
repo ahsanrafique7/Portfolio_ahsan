@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "../style/Home.css";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-// import { FaCode, FaUserAlt, FaBell } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Contact from './contact';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,13 +35,13 @@ function App() {
               provide consultancy, conduct research, and deliver training in the
               field of Data Science.
             </p>
-            <NavLink to="/hire" className="hirebtn">
-              Hire Now
-            </NavLink>
+            <Link smooth to="/#contact" className="hirebtn">
+              <b>Contact</b>
+            </Link>
           </div>
           <div className="image-section" data-aos="zoom-in">
             <img
-              src="/Images/AhsanH.jpg"
+              src="/Images/Ahsan2.svg"
               alt="Ahsan Rafique"
             />
           </div>
@@ -75,7 +75,7 @@ function App() {
                 </a>
               </div>
               <img
-                src="https://img.freepik.com/premium-photo/portrait-cheerful-young-man-white-tshirt-white-background-guy-is-standing-looking-camera-smiling_168410-2324.jpg"
+                src="/Images/Ahsan2.svg"
                 alt="Profile"
               />
             </div>

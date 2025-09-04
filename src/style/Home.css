@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 130px 40px;
+  padding: 80px 40px;
   flex-wrap: wrap;
   min-height: 92vh;  
   box-sizing: border-box;
@@ -58,11 +58,12 @@ body {
 .hirebtn {
   background: #1db9d2;
   border: none;
-  padding: 12px 25px;
+  padding: 0.6rem 1.5rem;
   color: white;
   border-radius: 25px;
   cursor: pointer;
   font-size: 14px;
+  transition: background 0.3s ease;
 }
 
 .hirebtn:hover {
