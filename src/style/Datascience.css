@@ -13,10 +13,12 @@
   align-items: center;
   padding: 80px 10%;
   position: relative;
+  flex-wrap: wrap; /* responsive */
 }
 
 .heru-content {
   max-width: 600px;
+  flex: 1;
 }
 
 .heru h1 {
@@ -34,19 +36,22 @@
   padding: 12px 25px;
   background: white;
   color: #2563eb;
-  border: none;
+  border: 2px solid #2563eb;
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.hero .btn-primary:hover {
-  background: #f1f1f1;
+.heru .btn-primary:hover {
+  background: #2563eb;
+  color: white;
 }
 
 .hero-image {
   width: 300px;
+  max-width: 100%;
+  margin-top: 20px;
 }
 
 /* Services Section */
@@ -65,7 +70,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* responsive */
 }
 
 .service-card {
@@ -94,6 +99,11 @@
   justify-content: space-between;
   padding: 80px 10%;
   gap: 50px;
+  flex-wrap: wrap; /* responsive */
+}
+
+.about-text {
+  flex: 1;
 }
 
 .about-text h2 {
@@ -122,8 +132,13 @@
   color: white;
 }
 
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
 .about-image img {
-  max-width: 400px;
+  max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
@@ -136,6 +151,8 @@
   justify-content: center;
   gap: 100px;
   padding: 60px 10%;
+  flex-wrap: wrap; /* responsive */
+  text-align: center;
 }
 
 .stat h3 {
@@ -145,4 +162,79 @@
 
 .stat p {
   font-size: 18px;
+}
+
+/* ======================
+   MEDIA QUERIES
+====================== */
+@media (max-width: 1024px) {
+  .heru {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heru h1 {
+    font-size: 28px;
+  }
+
+  .heru p {
+    font-size: 16px;
+  }
+
+  .services h2, 
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .service-card {
+    min-width: 100%;
+  }
+
+  .stat h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heru {
+    padding: 40px 5%;
+  }
+
+  .heru h1 {
+    font-size: 22px;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about {
+    padding: 40px 5%;
+  }
+
+  .services {
+    padding: 40px 5%;
+  }
+
+  .stats {
+    padding: 40px 5%;
+  }
 }

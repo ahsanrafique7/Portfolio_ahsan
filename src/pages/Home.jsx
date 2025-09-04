@@ -41,7 +41,7 @@ function App() {
           </div>
           <div className="image-section" data-aos="zoom-in">
             <img
-              src="https://img.freepik.com/premium-photo/portrait-cheerful-young-man-white-tshirt-white-background-guy-is-standing-looking-camera-smiling_168410-2324.jpg"
+              src="/Images/AhsanH.jpg"
               alt="Ahsan Rafique"
             />
           </div>
