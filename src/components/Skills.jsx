@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Navbar2 from "./Navbar2";
+import Navbar from "./Navbar";
 
 const SkillsExperience = () => {
   const skills = [
@@ -69,7 +69,7 @@ const SkillsExperience = () => {
   
   return (
     <>
-    <Navbar2 />
+    <Navbar />
     <div style={styles.container}>
       <div style={styles.content}>
         <h1 style={styles.mainTitle}>Skills & Experience</h1>

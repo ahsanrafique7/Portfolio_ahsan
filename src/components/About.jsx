@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/AboutMe.css";
-import Navbar2 from "./Navbar2";
+import Navbar from "./Navbar";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; 
@@ -8,7 +8,7 @@ import { HashLink as Link } from "react-router-hash-link";
 function AboutMe() {
   return (
     <>
-      <Navbar2 />
+      <Navbar />
       <div className="about-container">
         {/* Left Card */}
         <motion.div
